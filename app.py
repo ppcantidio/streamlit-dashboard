@@ -1,1 +1,21 @@
-import streamlit as st\nimport pandas as pd\nimport numpy as np\n\n# Mock data\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [24, 30, 22, 35],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\n\ndf = pd.DataFrame(data)\n\n# Title\nst.title('Dashboard')\n\n# Display the DataFrame\nst.write('### Mock Data', df)\n\n# Add a simple plot\nst.line_chart(df['Age'])
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+# Mock data
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [24, 30, 22, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+}
+
+df = pd.DataFrame(data)
+
+# Title
+st.title('Dashboard')
+
+# Display the DataFrame
+st.write('### Mock Data', df)
+
+# Add a simple plot
+st.line_chart(df['Age'])
